@@ -4,18 +4,13 @@ const NavBar = () => {
     return(
         <Navbar className = "nav-design" expand="lg">
             <Container>
-                <Navbar.Brand href="#home">MacAutec Web</Navbar.Brand>
+                <Navbar.Brand className = "text-light" href="#home">MacAutec Web</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-end ">
-                <Navbar.Brand href="#home">
-                    <img
-                        src="/profile_default.svg"
-                        width="30"
-                        height="30"
-                        className="d-inline-block align-top"
-                        alt="React Bootstrap logo"
-                    />
-                </Navbar.Brand>
+                <ul className = "navbar-nav mr-auto text-ligth">
+                    <li className = "nav-item"> Config</li>
+                </ul>
+                
                 </Navbar.Collapse>
             </Container>
         </Navbar>
