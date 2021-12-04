@@ -16,6 +16,10 @@
     transition: color 0.2s;
   }
   
+  h1 {
+    color: #19456B !important;
+  }
+
   /* Change color on hover */
   .bm-item:hover {
     color: white;
