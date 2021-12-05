@@ -1,5 +1,5 @@
 import './NavBar.css';
-import {Button, Navbar, NavDropdown, Container} from 'react-bootstrap';
+import {Navbar, Container} from 'react-bootstrap';
 const NavBar = () => {
     return(
         <Navbar className = "nav-design" expand="lg">

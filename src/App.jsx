@@ -7,12 +7,16 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 //Components
-import UsuariosGestionar from "./components/usuarios-gestionar";
+import UsuariosGestionar from "./pages/Usuario/Gestionar";
+//import Usuario from "./pages/Usuario/Usuario";
+//<Route path="/usuarios/:id" element={<Usuario/>} />
+import Usuario from "./pages/Usuario/Usuario"
 
 function App() {
   return (
@@ -28,7 +32,8 @@ function App() {
           <Col md={12}>
             <div className="wrapper">
               <Routes>
-                <Route path="usuarios-gestionar" element={<UsuariosGestionar />} />
+                <Route path="/usuarios-gestionar/" element={<UsuariosGestionar/>} />
+                <Route path="/usuarios/:id" element={<Usuario/>} />
               </Routes>
             </div>
           </Col>

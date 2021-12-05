@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from 'axios';
 import Table from 'react-bootstrap/Table';
-import UsuarioFila from './usuario-fila';
+import UsuarioFila from './Fila';
 import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form'
 
@@ -24,17 +24,18 @@ export default class UsuariosGestionar extends Component {
     
     ejecutaFiltro(cadena, filtro){
         if(cadena === ''){
-            this.state.filtrados = this.state.usuarios;
+            this.setState({ filtrados: this.state.usuarios });
             return;
         }            
         if(filtro === 'names'){
-            this.state.filtrados = this.state.usuarios.filter(function (el) {                
+            this.setState({ filtrados: this.state.usuarios.filter(function (el) {                
                 return el.names.toString().toLowerCase().indexOf(cadena.toString().toLowerCase()) > -1 || el.surnames.toString().toLowerCase().indexOf(cadena.toString().toLowerCase()) > -1;
-            });
+            }) });
+            
         }else{            
-            this.state.filtrados = this.state.usuarios.filter(function (el) {
+            this.setState({ filtrados: this.state.usuarios.filter(function (el) {
                 return el[filtro].toString().toLowerCase().indexOf(cadena.toString().toLowerCase()) > -1;
-            });
+            }) });            
         } 
     }
 
@@ -78,7 +79,7 @@ export default class UsuariosGestionar extends Component {
                     <td>Total usuarios: {this.state.usuarios.length}</td>
                     <td>Activos: {this.state.activos.length}</td>
                     <td>
-                        <Link className="btn btn-info" to={"/usuario-nuevo/"}>
+                        <Link className="btn btn-info" to={"/usuarios/nuevo"}>
                             Nuevo
                         </Link>
                     </td>

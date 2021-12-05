@@ -20,19 +20,7 @@ export default class UsuarioFila extends Component {
             })
         
     }
-
-    //identity: String,
-    //names: String,
-    //surnames: String,
-    //email: {type: String, require:true,unique: true},
-    //password: String,
-    //image: String,
-    //status: String
-    //role: String,
-    //createdAt: Date
-    //updatedAt: Date
     
-
     render() {
         const esMecanico = this.props.obj.role === 'Mecanico'
 
@@ -49,7 +37,7 @@ export default class UsuarioFila extends Component {
                         Agenda
                     </Link>
                     ):(<div></div>)}
-                    <Link className="btn btn-success" to={"/editar-usuario/" + this.props.obj._id}>
+                    <Link className="btn btn-success" to={"/usuarios/" + this.props.obj._id}>
                         Editar
                     </Link>
                     <Button onClick={this.borrarUsuario} className="btn btn-danger" variant="danger">Borrar</Button>
