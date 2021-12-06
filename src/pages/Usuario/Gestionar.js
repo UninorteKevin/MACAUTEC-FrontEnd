@@ -75,6 +75,7 @@ export default class UsuariosGestionar extends Component {
         return (<div className="table-wrapper">
           <h1>GESTIONAR USUARIOS</h1>
 <<<<<<< HEAD:src/pages/Usuario/Gestionar.js
+<<<<<<< HEAD:src/pages/Usuario/Gestionar.js
           <Table striped bordered hover>
             <tbody>
                 <tr>
@@ -89,6 +90,8 @@ export default class UsuariosGestionar extends Component {
             </tbody>
           </Table>
 =======
+=======
+>>>>>>> card-details:src/components/usuarios-gestionar.js
           <Row className = "mb-3">
               <Col md="3">
                 <Card className = "py-1 rounded-pill bg-info">
@@ -104,6 +107,9 @@ export default class UsuariosGestionar extends Component {
                 <Button className = "btn btn-success rounded-pill">Nuevo</Button>
               </Col>
           </Row>
+<<<<<<< HEAD:src/pages/Usuario/Gestionar.js
+>>>>>>> card-details:src/components/usuarios-gestionar.js
+=======
 >>>>>>> card-details:src/components/usuarios-gestionar.js
 
           <Table striped bordered hover>
