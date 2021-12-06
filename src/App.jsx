@@ -17,6 +17,8 @@ import UsuariosGestionar from "./pages/Usuario/Gestionar";
 //import Usuario from "./pages/Usuario/Usuario";
 //<Route path="/usuarios/:id" element={<Usuario/>} />
 import Usuario from "./pages/Usuario/Usuario"
+import Servicio from './pages/Servicio/Servicios';
+import Perfil from './pages/Perfil/Perfil';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
               <Routes>
                 <Route path="/usuarios-gestionar/" element={<UsuariosGestionar/>} />
                 <Route path="/usuarios/:id" element={<Usuario/>} />
+                <Route path="/servicios/" element={<Servicio/>} />
+                <Route path="/perfil/" element={<Perfil/>} />
               </Routes>
             </div>
           </Col>

@@ -8,7 +8,7 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-end ">
                 <ul className = "navbar-nav mr-auto text-ligth">
-                    <li className = "nav-item"> Config</li>
+                    <li className = "nav-item"><a href="/perfil">Perfil</a></li>
                 </ul>
                 
                 </Navbar.Collapse>
