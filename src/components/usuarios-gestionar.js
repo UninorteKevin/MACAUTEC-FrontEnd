@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table';
 import UsuarioFila from './usuario-fila';
 import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form'
+import { Card, Row, Col, Button } from "react-bootstrap";
 
 export default class UsuariosGestionar extends Component {
 
@@ -72,19 +73,21 @@ export default class UsuariosGestionar extends Component {
     render() {
         return (<div className="table-wrapper">
           <h1>GESTIONAR USUARIOS</h1>
-          <Table striped bordered hover>
-            <tbody>
-                <tr>
-                    <td>Total usuarios: {this.state.usuarios.length}</td>
-                    <td>Activos: {this.state.activos.length}</td>
-                    <td>
-                        <Link className="btn btn-info" to={"/usuario-nuevo/"}>
-                            Nuevo
-                        </Link>
-                    </td>
-                </tr>
-            </tbody>
-          </Table>
+          <Row className = "mb-3">
+              <Col md="3">
+                <Card className = "py-1 rounded-pill bg-info">
+                    <Card.Body><strong>Total usuarios: {this.state.usuarios.length}</strong></Card.Body>
+                </Card>
+              </Col>
+              <Col md="3">
+                <Card className = "p-1 rounded-pill bg-success">
+                    <Card.Body><strong>Usuarios activos: {this.state.activos.length}</strong></Card.Body>
+                </Card>
+              </Col>
+              <Col md="3" className = "px-3">
+                <Button className = "btn btn-success rounded-pill">Nuevo</Button>
+              </Col>
+          </Row>
 
           <Table striped bordered hover>
             <tbody>
