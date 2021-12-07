@@ -54,11 +54,50 @@ const Servicio = () => {
               </tr>
             </thead>
             <tbody>
+            <tr>
+                    <td>Revisión de frenos</td>
+                    <td>No disponible</td>
+                    <td>4</td>
+                    <td>150000</td>
+                    <td>
+                        <Button className = "btn btn-warning btn-small">Ver</Button>
+                    </td>
+                    <td>
+                        <Button className = "btn btn-warning btn-danger ml-3">Eliminar</Button>
+                    </td>
+                </tr>
+
                 <tr>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
+                    <td>Rotación de llantas</td>
+                    <td>Disponible</td>
+                    <td>5</td>
+                    <td>350000</td>
+                    <td>
+                        <Button className = "btn btn-warning btn-small">Ver</Button>
+                    </td>
+                    <td>
+                        <Button className = "btn btn-warning btn-danger ml-3">Eliminar</Button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Amortiguadores</td>
+                    <td>Disponible</td>
+                    <td>3</td>
+                    <td>250000</td>
+                    <td>
+                        <Button className = "btn btn-warning btn-small">Ver</Button>
+                    </td>
+                    <td>
+                        <Button className = "btn btn-warning btn-danger ml-3">Eliminar</Button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Cambio de aceite</td>
+                    <td>Disponible</td>
+                    <td>1</td>
+                    <td>150000</td>
                     <td>
                         <Button className = "btn btn-warning btn-small">Ver</Button>
                     </td>

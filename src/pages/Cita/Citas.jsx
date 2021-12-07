@@ -43,15 +43,66 @@ const Servicio = () => {
               </tr>
             </thead>
             <tbody>
+            <tr>
+                    <td>Revisión de frenos</td>
+                    <td>Agendada</td>
+                    <td>4</td>
+                    <td>150000</td>
+                    <td>El Kevin</td>
+                    <td>HTD 524</td>
+                    <td>15-12-2021</td>
+                    <td>9:00</td>
+                    <td>
+                        <Button className = "btn btn-warning btn-small">Ver</Button>
+                    </td>
+                    <td>
+                        <Button className = "btn btn-warning btn-danger ml-3">Eliminar</Button>
+                    </td>
+                </tr>
+
                 <tr>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>---</td>
+                    <td>Rotación de llantas</td>
+                    <td>En progreso</td>
+                    <td>5</td>
+                    <td>350000</td>
+                    <td>El Javier</td>
+                    <td>TYU 687</td>
+                    <td>15-12-2021</td>
+                    <td>10:00</td>
+                    <td>
+                        <Button className = "btn btn-warning btn-small">Ver</Button>
+                    </td>
+                    <td>
+                        <Button className = "btn btn-warning btn-danger ml-3">Eliminar</Button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Amortiguadores</td>
+                    <td>Cancelada</td>
+                    <td>3</td>
+                    <td>250000</td>
+                    <td>La Jeimy</td>
+                    <td>PRT 147</td>
+                    <td>15-12-2021</td>
+                    <td>11:00</td>
+                    <td>
+                        <Button className = "btn btn-warning btn-small">Ver</Button>
+                    </td>
+                    <td>
+                        <Button className = "btn btn-warning btn-danger ml-3">Eliminar</Button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Cambio de aceite</td>
+                    <td>Completada</td>
+                    <td>1</td>
+                    <td>50000</td>
+                    <td>El profe</td>
+                    <td>PLA 693</td>
+                    <td>15-12-2021</td>
+                    <td>12:00</td>
                     <td>
                         <Button className = "btn btn-warning btn-small">Ver</Button>
                     </td>
