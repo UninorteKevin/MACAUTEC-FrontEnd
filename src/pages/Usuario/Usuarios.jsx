@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form'
 import { Card, Row, Col, Button } from "react-bootstrap";
 
-export default class UsuariosGestionar extends Component {
+export default class Usuarios extends Component {
     
     constructor(props) {
         super(props)
