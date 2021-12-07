@@ -19,6 +19,7 @@ import UsuariosGestionar from "./pages/Usuario/Gestionar";
 import Usuario from "./pages/Usuario/Usuario"
 import Servicios from './pages/Servicio/Servicios';
 import Servicio from './pages/Servicio/Servicio';
+import Mecanico from './pages/Mecanico/Mecanico';
 import Perfil from './pages/Perfil/Perfil';
 import Agenda from './pages/Agenda/agenda';
 
@@ -40,8 +41,9 @@ function App() {
                 <Route path="/usuarios/:id" element={<Usuario/>} />
                 <Route path="/servicios/:id" element={<Servicio/>} />
                 <Route path="/servicios/" element={<Servicios/>} />
+                <Route path="/mecanicos/:id" element={<Mecanico/>} />
                 <Route path="/perfil/" element={<Perfil/>} />
-                <Route path="/agenda/" element={<Agenda/>} />                
+                <Route path="/agenda/" element={<Agenda/>} />            
               </Routes>
             </div>
           </Col>
