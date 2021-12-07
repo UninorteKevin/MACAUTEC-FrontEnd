@@ -17,7 +17,8 @@ import UsuariosGestionar from "./pages/Usuario/Gestionar";
 //import Usuario from "./pages/Usuario/Usuario";
 //<Route path="/usuarios/:id" element={<Usuario/>} />
 import Usuario from "./pages/Usuario/Usuario"
-import Servicio from './pages/Servicio/Servicios';
+import Servicios from './pages/Servicio/Servicios';
+import Servicio from './pages/Servicio/Servicio';
 import Perfil from './pages/Perfil/Perfil';
 import Agenda from './pages/Agenda/agenda';
 
@@ -37,7 +38,8 @@ function App() {
               <Routes>
                 <Route path="/usuarios-gestionar/" element={<UsuariosGestionar/>} />
                 <Route path="/usuarios/:id" element={<Usuario/>} />
-                <Route path="/servicios/" element={<Servicio/>} />
+                <Route path="/servicios/:id" element={<Servicio/>} />
+                <Route path="/servicios/" element={<Servicios/>} />
                 <Route path="/perfil/" element={<Perfil/>} />
                 <Route path="/agenda/" element={<Agenda/>} />                
               </Routes>
