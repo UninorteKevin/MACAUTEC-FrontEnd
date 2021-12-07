@@ -19,6 +19,7 @@ import UsuariosGestionar from "./pages/Usuario/Gestionar";
 import Usuario from "./pages/Usuario/Usuario"
 import Servicio from './pages/Servicio/Servicios';
 import Perfil from './pages/Perfil/Perfil';
+import Agenda from './pages/Agenda/agenda';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
                 <Route path="/usuarios/:id" element={<Usuario/>} />
                 <Route path="/servicios/" element={<Servicio/>} />
                 <Route path="/perfil/" element={<Perfil/>} />
+                <Route path="/agenda/" element={<Agenda/>} />                
               </Routes>
             </div>
           </Col>
