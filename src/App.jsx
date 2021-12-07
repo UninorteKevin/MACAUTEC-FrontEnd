@@ -23,6 +23,7 @@ import Mecanicos from './pages/Mecanico/Mecanicos';
 import Mecanico from './pages/Mecanico/Mecanico';
 import Perfil from './pages/Perfil/Perfil';
 import Agenda from './pages/Agenda/agenda';
+import Citas from './pages/Cita/Citas';
 
 function App() {
   return (
@@ -45,7 +46,8 @@ function App() {
                 <Route path="/mecanicos/" element={<Mecanicos/>} />
                 <Route path="/mecanicos/:id" element={<Mecanico/>} />
                 <Route path="/perfil/" element={<Perfil/>} />
-                <Route path="/agenda/" element={<Agenda/>} />            
+                <Route path="/agenda/" element={<Agenda/>} />
+                <Route path="/citas/" element={<Citas/>} />
               </Routes>
             </div>
           </Col>

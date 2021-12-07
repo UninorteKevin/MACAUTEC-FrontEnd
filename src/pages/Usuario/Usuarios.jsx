@@ -76,7 +76,7 @@ export default class Usuarios extends Component {
     render() {
       
         return (<div className="table-wrapper">
-          <h1>GESTIONAR USUARIOS</h1>
+          <h1>Gestionar usuarios</h1>
           <Row className = "mb-3">
               <Col md="3">
                 <Card className = "py-1 rounded-pill bg-info">

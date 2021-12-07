@@ -3,25 +3,9 @@ import { Link } from 'react-router-dom';
 const Servicio = () => {
     return ( 
         <div className="table-wrapper">
-            <h1>Gestionar servicios</h1>
+            <h1>Gestionar citas</h1>
             <Row className = "mb-3">
-                <Col md = "3">
-                    <Card>
-                        <Card.Body>
-                            <h4>Mas solicitado</h4>
-                            <span>---</span>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col md = "3">
-                    <Card>
-                        <Card.Body>
-                            <h4>Menos solicitado</h4>
-                            <span>---</span>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col md="3" className = "px-3 d-flex align-items-center justify-content-center">
+                   <Col md="3" className = "px-3">
                     <Link className="btn btn-success rounded-pill" to={"/servicios/nuevo/"}>
                         Nuevo
                     </Link>                    
@@ -36,7 +20,8 @@ const Servicio = () => {
                         </Form.Group>
                     </td>
                     <td>
-                        <Form.Control as="select" >                            
+                        <Form.Control as="select" >
+                            <option value="names">Cliente</option>
                             <option value="email">Tipo servicio</option>                            
                             <option value="role">Mecanico</option>
                         </Form.Control>
@@ -51,10 +36,18 @@ const Servicio = () => {
                 <th>Estado</th>
                 <th>Tiempo estimado</th>
                 <th>Costo</th>
+                <th>Cliente</th>
+                <th>Placa vehiculo</th>
+                <th>Fecha</th>
+                <th>Hora</th>
               </tr>
             </thead>
             <tbody>
                 <tr>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
                     <td>---</td>
                     <td>---</td>
                     <td>---</td>
