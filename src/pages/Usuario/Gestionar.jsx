@@ -85,7 +85,7 @@ export default class UsuariosGestionar extends Component {
                     <Card.Body><strong>Usuarios activos: {this.state.activos.length}</strong></Card.Body>
                 </Card>
               </Col>
-              <Col md="3" className = "px-3">
+              <Col md="3" className = "px-3 d-flex align-items-center justify-content-center">
                 <Button className = "btn btn-success rounded-pill">Nuevo</Button>
               </Col>
           </Row>
