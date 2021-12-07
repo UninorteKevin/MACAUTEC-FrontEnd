@@ -7,10 +7,10 @@ import Form from 'react-bootstrap/Form'
 import { Card, Row, Col, Button } from "react-bootstrap";
 
 export default class UsuariosGestionar extends Component {
-
+    
     constructor(props) {
         super(props)
-
+        
         this.onChangeTipoFiltro = this.onChangeTipoFiltro.bind(this);
         this.onChangeCadenaFiltro = this.onChangeCadenaFiltro.bind(this);
 
@@ -23,6 +23,8 @@ export default class UsuariosGestionar extends Component {
         };
     }
     
+
+
     ejecutaFiltro(cadena, filtro){
         if(cadena === ''){
             this.setState({ filtrados: this.state.usuarios });
@@ -72,6 +74,7 @@ export default class UsuariosGestionar extends Component {
     }
 
     render() {
+      
         return (<div className="table-wrapper">
           <h1>GESTIONAR USUARIOS</h1>
           <Row className = "mb-3">
@@ -86,7 +89,9 @@ export default class UsuariosGestionar extends Component {
                 </Card>
               </Col>
               <Col md="3" className = "px-3 d-flex align-items-center justify-content-center">
-                <Button className = "btn btn-success rounded-pill">Nuevo</Button>
+                <Link className="btn btn-success rounded-pill" to={"/usuarios/nuevo/"}>
+                    Nuevo
+                </Link>
               </Col>
           </Row>
 

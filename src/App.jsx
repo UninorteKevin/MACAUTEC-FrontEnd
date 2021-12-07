@@ -13,7 +13,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 //Components
-import UsuariosGestionar from "./pages/Usuario/Gestionar";
+import Usuarios from "./pages/Usuario/Usuarios";
 //import Usuario from "./pages/Usuario/Usuario";
 //<Route path="/usuarios/:id" element={<Usuario/>} />
 import Usuario from "./pages/Usuario/Usuario"
@@ -37,7 +37,7 @@ function App() {
           <Col md={12}>
             <div className="wrapper">
               <Routes>
-                <Route path="/usuarios-gestionar/" element={<UsuariosGestionar/>} />
+                <Route path="/usuarios/" element={<Usuarios/>} />
                 <Route path="/usuarios/:id" element={<Usuario/>} />
                 <Route path="/servicios/:id" element={<Servicio/>} />
                 <Route path="/servicios/" element={<Servicios/>} />
